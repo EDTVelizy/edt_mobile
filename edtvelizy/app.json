@@ -2,10 +2,13 @@
   "expo": {
     "name": "edtvelizy",
     "slug": "edtvelizy",
-    "version": "1.0.0",
+    "owner": "astropilot",
+    "version": "2.0.0",
+    "description": "The mobile application (Android & IOS) allowing to consult the timetable of the IUT of Vélizy",
+    "privacy": "unlisted",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -18,16 +21,26 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.edt.velizy.edtvelizy",
+      "buildNumber": "5"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.edt.velizy.edtvelizy",
+      "versionCode": 5,
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.edt.velizy.edtvelizy",
+      "backgroundColor": "#FFFFFF"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": [
+      ["./plugins/withDisableForcedDarkModeAndroid.js", {}]
+    ]
   }
 }
